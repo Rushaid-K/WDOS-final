@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="EN-US">
+    <head>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Meuseum Visit</title>
+        <link rel="stylesheet" href="clickHere.css">
+        <script src="clickhere.js"></script>
+        <link rel="normalize" href="normalize.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div class="banner">
+        <div class="navbar">
+            <img src="/images and others/final logo.png" width="10%">
+            <ul>
+                <li><a href="home.html">home</a></li>
+                <li><a href="/activities.html">activites</a></li>
+                <li><a href="/Contact us.html">contact us</a></li>
+                <li><a href="/donation and payment.html">donation</a></li>
+                <li><a href="/animals and plants.html">animals and plants</a></li>
+            </ul>
+        </div>
+        <div class="form">
+            <section class="guest">
+                <h1>when will you be visiting?</h1>
+                <form id="form1">
+                    <h2>Select Date:</h2>
+                    <input type="month"id="date" name="date">
+                    <h2>Full Name:</h2><br>
+                    <input type="text" id="Fname" name="Fname" placeholder="Full Name" required><br>
+                    <h2>Phone number:</h2>
+                    <section class="country">
+                    <select type="select" id="phone" name="phone" onchange="countryCode" required>
+                        <option value="Select country">select country</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="KSA">Kingdom of Saudi Arabia</option>
+                    </select>
+                    <input type="tel" id="phoneOutput" placeholder="Enter number">
+                    </section>
+                    <h2>Email:</h2><br>
+                    <input type="email" id="Email" name="Email" placeholder="Email" required><br>
+                    <h2>Enter email again:</h2><br>
+                    <input type="email" id="Emailconf" name="Emailconf" placeholder="Confirm Email" required><br>
+                    <h2>Gender:</h2><br>
+                    <select type="select" id="Gen" name="gen" required>
+                        <option value="male">Male</option>
+                        <option value="female">female</option>
+                    </select>
+                </form>
+            </section>
+            <section class="booking">
+                <form id="booking">
+                    <h3>guests</h3>
+                    <h2>currently in high demand!</h2>
+                    <li><a href="/Purchasing/Purchase.html">Make your Bookings Here!</a></li>
+                    <h3>Duration</h3>
+                    <h2>select time:</h2>
+                    <select aria-placeholder="3 Hrs" required id="Dura" name="Dura">
+                        <option value="3">3 Hrs</option>
+                        <option value="1.5">1/2 day</option>
+                        <option value="full">Full Day</option>
+                    </select>
+                </form>
+            </section>
+            <div>
+                <h3>Donations</h3>
+                <form>
+                    <h2>Name</h2>
+                    <input type="text" id="DonaName" name="DonaName" placeholder="Enter Name">
+                    <h2>Address</h2>
+                    <input type="type" id="DonaAdress" name="DonaAdress" placeholder="Enter Email">
+                    <h2>Select Donation Amount</h2>
+                    <select aria-placeholder="Select Amount" id="Dona" name="Dona">
+                        <option value="Select Amount">Select Amount</option>
+                        <option value="100">100 LKR</option>
+                        <option value="500">500 LKR</option>
+                        <option value="1000">1000 LKR</option>
+                        <option value="2000">2000 LKR</option>
+                        <option value="5000">5000 LKR</option>
+                        <option value="10000">10000 LKR</option>
+                    </select>
+                    <h3>Billing Information</h3>
+                    <h2>Card number</h2>
+                    <input type="text" id="CardNo" name="CardNo" placeholder="Enter Card Number">
+                    <h2>Expiry month</h2>
+                    <input type="month" id="month" name="Month">
+                    <h2>Expiry Year</h2>
+                    <input type="text" id="Year" name="year">
+                    <h2>CVC/CVV</h2>
+                    <input type="text" id="CVC" name="CVC" maxlength="3">
+                    <h2>Name on card</h2>
+                    <input type="text" id="NameOnCard" name="NameOnCard">
+                </form>
+            </div>
+            <section>
+                <h2> current Total:</h2>
+                <p id="Output"></p>
+                <h2>Grand Total:</h2>
+                <p id="GOutput"></p>
+                <button type="submit" id="BNow">Book Now!</button>
+            </section>
+        </div>
+    </dIV>
+
+    </body>
+</html>
+<!--
+    final logo.png is from https://www.123rf.com/photo_108536198_stock-vector-zoo-vector-icon-isolated-on-transparent-background-zoo-logo-concept.html
+    background image is from https://images2.minutemediacdn.com/image/upload/c_crop,h_1347,w_2400,x_0,y_242/f_auto,q_auto,w_1100/v1620827261/shape/mentalfloss/55875-gettyimages-1250653774.jpg
+-->

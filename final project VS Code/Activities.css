@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./try\ this.jpg);
+    background-position: center;
+    background-size: cover;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+.main{
+    padding: 5px;
+    max-width: 960px;
+    width: 95%;
+    margin: 20px auto;
+}
+header{
+    padding: 0 15px;
+    text-align: center;
+    font-size: 21px ;
+    color: white;
+}
+.columns{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 5px 0;
+    color: white;
+}
+.column{
+    flex: 1;
+    border: 3px solid green;
+    margin: 2px;
+    padding: 5px;
+    transition: 0.3s;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: green;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{
+        width: 100%;
+
+}
+.column:first-child{
+    border: 3px solid gray;
+}
+.column:last-child{
+    border: 3px solid blue;
+}
+a{
+    color: white;
+}
